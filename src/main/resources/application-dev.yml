@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/nsprices_dev
+    username: nsp_dev_user
+    password: highway1
+    platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database: mysql
+    show-sql: true
+
+  api:
+    na-url: https://www.nintendo.com/json/content/get/filter/game?system=switch&sort=title&direction=asc&shop=ncom&limit=200&offset={offset}
