@@ -1,9 +1,9 @@
 #Create games table
 CREATE TABLE nsprices_dev.games (
     id int not null auto_increment,
-    na_nsuid int not null,
-    jp_nsuid int not null,
-    eu_nsuid int not null,
+    na_nsuid varchar(255) not null,
+    jp_nsuid varchar(255) not null,
+    eu_nsuid varchar(255) not null,
     na_title varchar(255),
     jp_title varchar(255),
     eu_title varchar(255),
@@ -11,13 +11,18 @@ CREATE TABLE nsprices_dev.games (
     lang varchar(255),
     publisher varchar(255),
     img_url varchar(255),
-    score int,
+    box_img_url varchar(255),
+    crit_score int,
+    user_score float,
     category varchar(255),
     is_dig boolean,
     player_num int,
     multiplayer boolean,
     tv_mode boolean,
     hand_mode boolean,
+    code varchar(255),
+    description varchar(255),
+    age_rating varchar(255)
     PRIMARY KEY(id)
 );
 
@@ -32,6 +37,11 @@ create table nsprices_dev.prices (
     au_p float,
     nz_p float,
     gb_p float,
+    ru_p float,
+    cz_p float,
+    eu_p float,
+    za_p float,
+    dk_p float,
     steam_p float,
     ps4_p float,
     xbox_p float,

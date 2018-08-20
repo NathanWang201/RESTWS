@@ -12,7 +12,7 @@ import java.io.StringReader;
 @Service
 public class JPXmlApiServiceImpl implements JPXmlApiService{
 
-    RestTemplate restTemplate;
+    private RestTemplate restTemplate;
 
     public JPXmlApiServiceImpl(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;

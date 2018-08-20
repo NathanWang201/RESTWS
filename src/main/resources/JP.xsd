@@ -1,0 +1,26 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="TitleInfoList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TitleInfo" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="InitialCode"/>
+                            <xs:element type="xs:string" name="TitleName"/>
+                            <xs:element type="xs:string" name="MakerName"/>
+                            <xs:element type="xs:string" name="MakerKana"/>
+                            <xs:element type="xs:string" name="Price"/>
+                            <xs:element type="xs:string" name="SalesDate"/>
+                            <xs:element type="xs:string" name="SoftType"/>
+                            <xs:element type="xs:short" name="PlatformID"/>
+                            <xs:element type="xs:byte" name="DlIconFlg"/>
+                            <xs:element type="xs:string" name="LinkURL"/>
+                            <xs:element type="xs:byte" name="ScreenshotImgFlg"/>
+                            <xs:element type="xs:string" name="ScreenshotImgURL"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -9,6 +9,5 @@ spring:
       ddl-auto: validate
     database: mysql
     show-sql: true
-
   api:
     na-url: https://www.nintendo.com/json/content/get/filter/game?system=switch&sort=title&direction=asc&shop=ncom&limit=200&offset={offset}
